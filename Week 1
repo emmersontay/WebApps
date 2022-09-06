@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <!-- Header -->
+
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <script scr="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Dog Breeds</title>
+  </head>
+  <!-- External CSS -->
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    body {
+      background-color: rgb(243, 207, 181);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      column-count: 2;
+      column-rule-style: solid;
+      text-align: center;
+    }
+
+  </style>
+
+  <body>
+
+    <div id="app">
+      <!-- {{message}} -->
+    </div>
+
+    <script src="index.js"></script>
+    <!-- Header Tag 1 -->
+    <center>
+      <h1 style="background-color:darksalmon; color:white;">Popular Breeds</h1>
+    </center>
+
+    <!-- Adding a column to the webpage -->
+    <p style="font-family: Arial, Helvetica, sans-serif;">Dogs are known to be a family friendly pet, which is why this page is here to inform you with the most popular breeds currently to have the safest and outgoing pet you can adopt.</p>
+    <p> <br> </p>
+    <div style="font-family: Arial, Helvetica, sans-serif;"> Having a new dog can be hard for the first 4 weeks especically a puppy. This website is here to ensure you get the best breed that suits your <b>family</b> and <b>environment</b>. Certain environments can take a toll on both you and the dog. More enclosed apartment like housing tend to have less room for a dog where dogs need to have space to run around or live near an area you can allow the dog to run around.
+    </div>
+    <p> <br> </p>
+
+    <table style="width:100%">
+      <tr>
+        <center>
+          <th>Name of Breed</th>
+        </center>
+        <center>
+          <th>Complementary Image</th>
+        </center>
+      </tr>
+      <tr>
+        <td>Labrador Retriever</td>
+        <td>
+          <center><img src="labs.jpg" alt="Labrador Retriever" style="width:128px;height:128px;"></center>
+        </td>
+      </tr>
+      <tr>
+        <td>French Bulldog</td>
+        <td>
+          <center><img src="french_bull.jpg" alt="French Bulldog" style="width:128px;height:128px;"></center>
+        </td>
+      </tr>
+      <tr>
+        <td>Golden Retriever</td>
+        <td>
+          <center><img src="golden.jpg" alt="Golden Retriever" style="width:128px;height:128px;"></center>
+        </td>
+      </tr>
+      <tr>
+        <td>German Shepherd Dogs</td>
+        <td>
+          <center><img src="german.jpg.webp" alt="German Shepherd Dogs" style="width:128px;height:128px;"></center>
+        </td>
+      </tr>
+    </table>
+
+    <p style="font-family: Arial, Helvetica, sans-serif;">These statistics are referenced from a recent webpage found <a href="https://www.akc.org/expert-advice/dog-breeds/most-popular-dog-breeds-of-2021/">here.</a></p>
+
+    <h2 style="background-color:darksalmon; color:white;">How to look after a dog!</h2>
+
+    <p style="font-family: Arial, Helvetica, sans-serif;">Below is a YouTube video that teaches you the basics of how to look after a dog. Afterwards you can find yourself to a small checklist to ensure you have all the requirements/plans ready. </p>
+
+    <center><iframe width="420" height="315" src="https://www.youtube.com/watch?v=peUVLEUj-AM"></iframe></center>
+
+    <p style="font-family: Arial, Helvetica, sans-serif;">I hope you learned the certain basics of bringing a dog home. Below is checklist of your preperation to owning a dog:</p>
+    <form>
+      <input type="checkbox" id="prep1" name="prep1" value="Bed">
+      <label for="prep1"> I have a dog bed</label><br>
+      <input type="checkbox" id="prep2" name="prep2" value="Leash">
+      <label for="prep2"> I have a dog leash</label><br>
+      <input type="checkbox" id="prep3" name="prep3" value="Water and Food">
+      <label for="prep3"> I have two bowls for my dogs water and food</label>
+      <input type="checkbox" id="prep4" name="prep4" value="Toys">
+      <label for="prep4"> I have toys to entertain my dog</label>
+    </form>
+
+    <h2 style="background-color:darksalmon; color:white;">Contact Us Below!</h2>
+    <p> <br> </p>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Enter your email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="message">Message:</label><br>
+      <input type="text" id="message" name="message" style="width:400px; height:200px;"><br> <br>
+      <input type="submit" value="Submit"><br><br>
+    </form>
+
+    <button type="button" onclick="alert('Thank you for reading my page!')">Click Me!</button><br> <br>
+
+    <p style="font-family: Arial, Helvetica, sans-serif;">Print page to collect checklist details and useful information:</p><br>
+    <button onclick="window.print()">Print this page</button>
+
+
+    <p id="demo"></p>
+    
+    <script>
+      const d = new Date();
+      document.getElementById("demo").innerHTML = d;
+    </script>
+  </body>
+
+</html>
