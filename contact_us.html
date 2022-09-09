@@ -4,9 +4,61 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Doggy DayCare</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="dog.css">
     </head>
     <body>
-        <h1>Contact Us</h1>
+<!------------------------------------------- START OF NAVIGATION ------------------------------------------->
+
+    <div class="topnav">
+        <a href="dog.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="profile.html" class="split">Profile</a>
+    </div>
+
+<!------------------------------------------- END OF NAVIGATION ------------------------------------------->
+
+<!------------------------------------------- START OF CONTACT US FORM ------------------------------------------->
+
+<h1> Contact Us </h1>
+
+<p style="color:rgb(158, 158, 158); background-color:rgb(158, 158, 158); font-size: xx-small;"> hi </p>
+<br>
+
+    <form class="contact-form" @submit.prevent="onSubmit">
+
+        <p>
+            <label for="name">Name:</label>
+            <input id="name" v-model="name">
+        </p>
+            
+        <p>
+            <label for="email">Email:</label>
+            <textarea id="email" v-model="email"></textarea>
+        </p>
+
+        <p>
+            <label for="message">Message:</label>
+            <textarea id="message" v-model="message"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+
+    </form>
+
+<br>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201643.14092337986!2d144.8321042328125!3d-37.8445153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad640592c2ddceb%3A0x805bd52f251bd12!2sDeakin%20University%20Melbourne%20Burwood%20Campus!5e0!3m2!1sen!2sau!4v1662730275941!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!------------------------------------------- END OF CONTACT US FORM ------------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10"></script>
+    <script src="dog.js"></script>
+
+<!------------------------------------------- START OF FOOTER ------------------------------------------->
+    <div class="footer"></div>
+<!------------------------------------------- END OF FOOTER ------------------------------------------->
     </body>
 </html>

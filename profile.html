@@ -20,9 +20,32 @@
 
 <!------------------------------------------- START OF CREATE ACCOUNT ------------------------------------------->
 
+<h1> Sign Up Here </h1>
 
-
-
+<form name="loginForm" onsubmit="signUp()" method="POST">
+    First Name:
+    <input type="text" name="firstName">
+    <br>
+    <br>
+    Last Name:
+    <input type="text" name="lastName">
+    <br>
+    <br>
+    Date of Birth:
+    <input type="date" name="dob">
+    <br>
+    <br>
+    Email:
+    <input type="text" name="email">
+    <br>
+    <br>
+    Password:
+    <input type="password" pattern=".{6,}" title="Six characters or more"
+    name="password">
+    <br>
+    <br>
+    <input type="submit" value="Sign Up">
+</form>
 
 <!------------------------------------------- END OF CREATE ACCOUNT ------------------------------------------->
 
@@ -31,7 +54,7 @@
 <br>
 <br>
     <div id="app">
-        <h1> Login </h1>
+        <h1> DON'T USE THIS YET (DRAFT) </h1>
         <div class="loginstyle"></div>
         <div v-html="template"></div>
     </div>
