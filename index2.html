@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello World Vue Application</title>
+        <link rel="stylesheet" href="">
+    </head>  
+<body>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color:black;
+        background-color: bisque;
+        text-align:center; 
+    }
+
+</style>
+
+    <div id="checkboxes">
+        <h1>Select Fruits</h1>
+        <input type="checkbox" id="orangeFruit" v-model="fruit">
+        <label for="orangeFruit">Orange</label>
+        <input type="checkbox" id="appleFruit" v-model="fruit">
+        <label for="appleFruit">Apple</label>
+        <input type="checkbox" id="strawberryFruit" v-model="fruit">
+        <label for="strawberryFruit">Strawberry</label>
+    </div>
+
+<script type="text/javascript">
+    var checkboxes = new Vue({
+        el: "#checkboxes",
+        data: {
+            fruit: false
+        }
+    });
+</script>    
+</body>
+</html>
