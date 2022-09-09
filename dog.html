@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Doggy DayCare</title>
+        <link rel="stylesheet" href="dog.css">
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                color:black;
+                background-color: rgb(255, 255, 255);
+                text-align:center;
+            }
+        
+            .topnav {
+              overflow: hidden;
+              background-color: rgb(0, 0, 0);
+            }
+        
+            .topnav a {
+              float: left;
+              color: #fffbfb;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+        
+            .topnav a:hover {
+              background-color: rgb(75, 74, 74);
+              color: rgb(255, 255, 255);
+            }
+        
+            /* Create a right-aligned (split) link inside the navigation bar */
+            .topnav a.split {
+              float: right;
+              background-color: #ffffff;
+              color: rgb(0, 0, 0);
+            }
+        
+          </style>
+    </head>  
+<body>
+    <style>
+        body,
+        html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+  
+        * {
+          box-sizing: border-box;
+        }
+  
+        .bg-image {
+          /* The image used */
+          background-image: url("https://3.bp.blogspot.com/-7hTLazldRco/WLvtXjKUF9I/AAAAAAAALkM/xmJjkhNXNBkIoJ_UCFJsNMPb906k30qEwCLcB/s1600/Why-consider-Doggy-DayCare-Header.jpg");
+  
+          /* Add the blur effect */
+          -webkit-appearance: blur(4px);
+          filter: blur(4px);
+  
+          /* Full height */
+          height: 100%;
+  
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+  
+        /* Position text in the middle of the page/image */
+        .bg-text {
+          background-color: rgb(0, 0, 0);
+          /* Fallback color */
+          background-color: rgba(0, 0, 0, 0.4);
+          /* Black w/opacity/see-through */
+          color: white;
+          font-weight: bold;
+          border: 3px solid #f1f1f1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          width: 80%;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .footer {
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        }
+    </style>
+
+    <div id="app">
+
+    </div>
+
+<!------------------------------------------- START OF NAVIGATION ------------------------------------------->
+
+    <div class="topnav">
+        <a href="dog.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="profile.html" class="split">Profile</a>
+    </div>
+
+<!------------------------------------------- END OF NAVIGATION ------------------------------------------->
+
+<!------------------------------------------- START OF HOMEPAGE ------------------------------------------->
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+      <h1 style="font-size:50px">DOGGY DAYCARE</h1>
+    </div>
+
+    <h1>About Us</h1>
+
+    <p>The Doggy DayCare service is intended for dog owners who are busy individuals that can’t look after their dogs during the week can benefit. You will find this service relieving to your stressful lives and leaving your dog home alone. While having the ability to watch their dog at any time at the day care you will be able to feel less worried of your dogs being mistreated. The goal is to help the wellbeing of both you and your furry friends to have the best life possible.</p>
+<!------------------------------------------- END OF HOMEPAGE ------------------------------------------->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10"></script>
+    <script src="dog.js"></script>
+
+<!------------------------------------------- START OF FOOTER ------------------------------------------->
+    <div class="footer"></div>
+<!------------------------------------------- END OF FOOTER ------------------------------------------->
+</body>
+</html>
